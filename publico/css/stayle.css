@@ -1,5 +1,7 @@
 /* Estilos para o body */
-body {
+
+
+ body {
     margin: 0;
     padding: 0;
     padding-top: 60px;
@@ -12,9 +14,13 @@ body {
     background-image: url('/img/1-9.jpg');
     background-size: cover;
     background-position: center;
-}
+    /*login*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
 
-body::after {
+/* body::after {
     content: "";
     position: absolute;
     top: 0;
@@ -22,8 +28,8 @@ body::after {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Altere o valor alpha (0.5) para ajustar o nível de escurecimento */
-}
+    
+} */
 
 /* Estilos para o navbar*/
 #navbar {
@@ -86,4 +92,22 @@ section:nth-child(even) {
     bottom: 0;
     width: 100%;
     color: white;
+}
+
+
+/*cardes dos dados*/
+
+.card {
+    width: calc(25% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }

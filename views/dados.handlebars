@@ -1,0 +1,12 @@
+<h1>Dados Cadastrados</h1>
+    {{#if users.length}}
+        {{#each users}}
+            <div class="card">
+                <h3>Usuário: {{this.name}}</h3>
+                <p>Email: {{this.email}}</p>
+                <p>Senha: {{this.password}}</p>
+            </div>
+        {{/each}}
+    {{else}}
+        <p>Nenhum usuário cadastrado.</p>
+    {{/if}}
