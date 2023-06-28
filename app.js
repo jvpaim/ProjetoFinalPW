@@ -36,10 +36,10 @@ app.get('/login', (req, res) => {
 
 // Rota para lidar com o envio do formulário de login
 app.post('/login', (req, res) => {
-    const { name, email, password } = req.body;
+    const { name, email, number } = req.body;
 
     // Armazenar os dados do usuário cadastrado
-    users.push({ name, email, password });
+    users.push({ name, email, number });
 
     // Redirecionar para a página de sucesso após o login bem-sucedido
     res.redirect(`/suceso?name=${name}`);
