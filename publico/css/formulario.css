@@ -1,8 +1,11 @@
 /*Formulario*/
 .form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 300px;
     padding: 20px;
-    border: 1px solid #ccc;
+    padding-left: 40%;
     border-radius: 5px;
     text-align: center;
 }
@@ -12,6 +15,10 @@
     margin-bottom: 10px;
     padding: 5px;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .form-container button {
@@ -22,5 +29,6 @@
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    
+    
 }
